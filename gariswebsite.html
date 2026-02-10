@@ -596,15 +596,11 @@
       /* ===== Track cards ===== */
       .tracks-grid {
         display: grid;
-        grid-template-columns: repeat(3, 1fr);
+        grid-template-columns: 1fr;
         gap: 28px;
         align-items: stretch;
-      }
-
-      @media (max-width: 980px) {
-        .tracks-grid {
-          grid-template-columns: 1fr;
-        }
+        max-width: 980px;
+        margin: 0 auto;
       }
 
       .track-card {
@@ -1102,9 +1098,12 @@
               <li><a href="#home" data-link>Home</a></li>
               <li><a href="#register" data-link>Register</a></li>
               <li><a href="#research" data-link>Research</a></li>
-              <li><a href="#innovation" data-link>Innovation</a></li>
-              <li><a href="#conceptual" data-link>Conceptual Design</a></li>
-              <li><a href="#competition-tracks" data-link>Competition Tracks</a></li>
+              <li><a href="#competition-tracks" data-link>Competition Track</a></li>
+              <li><a href="#timeline" data-link>Timeline</a></li>
+              <li><a href="#criteria" data-link>Judging Criteria</a></li>
+              <li><a href="#resources" data-link>Resources</a></li>
+              <li><a href="#judges" data-link>Judges</a></li>
+              <li><a href="#contact" data-link>Get in Touch</a></li>
             </ul>
           </nav>
 
@@ -1118,9 +1117,7 @@
           <a href="#home">Home</a>
           <a href="#register">Register</a>
           <a href="#research">Research</a>
-          <a href="#innovation">Innovation</a>
-          <a href="#conceptual">Conceptual Design</a>
-          <a href="#competition-tracks">Competition Tracks</a>
+          <a href="#competition-tracks">Competition Track</a>
           <a href="#timeline">Timeline</a>
           <a href="#criteria">Judging Criteria</a>
           <a href="#resources">Resources</a>
@@ -1138,7 +1135,7 @@
 
         <div class="content hero">
           <div>
-            <div class="subtitle">RESEARCH · INNOVATION · CONCEPTUAL DESIGN</div>
+            <div class="subtitle">RESEARCH · STUDENT-LED COMPETITION</div>
             <h1 class="h1">Global Association of<br />Research &amp; Innovation for<br />Students</h1>
             <div class="cta">
               <a class="btn btn-outline btn-wide" href="https://forms.gle/XiBsuDNLTZdtiuQd7" target="_blank" rel="noreferrer"
@@ -1175,14 +1172,13 @@
               <h2 class="h2">THE GARIS<br />COMPETITION</h2>
               <p class="p">
                 GARIS (Global Association of Research &amp; Innovation for Students) is a student-led competition created
-                to provide opportunities for students to innovate original solutions to relevant issues in the scientific
-                field, through research and innovation. “GARIS,” meaning “line,” reflects our vision to empower the next
-                generation around the globe to redefine the lines of youth engagement in research and innovation.
+                to provide opportunities for students to develop and communicate original scientific work through research.
+                “GARIS,” meaning “line,” reflects our vision to empower the next generation around the globe to redefine
+                the lines of youth engagement in research and innovation.
               </p>
               <p class="p">
-                Participants may work individually or in teams of 1–7 across three tracks: Research, Innovation, and
-                Conceptual Design. The programme supports students through structured milestones and skill-building
-                sessions with mentors and guest speakers.
+                Participants may work individually or in teams of 1–7 in the Research track. The programme supports teams
+                through structured milestones and skill-building sessions with mentors and guest speakers.
               </p>
 
               <div style="margin-top: 28px">
@@ -1246,15 +1242,14 @@
               <div class="stage">ONGOING STAGE</div>
 
               <p class="p">
-                This stage finalises team formation, confirms your track (Research, Innovation, or Conceptual Design),
-                and locks in your initial idea. Track Selection &amp; Ideation is a required deliverable before the
-                programme begins.
+                This stage finalises team formation and locks in your initial research direction (topic + research question
+                outline). Track Selection &amp; Ideation is a required deliverable before the programme begins.
               </p>
               <p class="p">
                 Participants strengthen their work through weekly Friday sessions during lunch, including guest-speaker
                 sessions and practical workshops led by skilled professionals and researchers. These sessions are
-                designed to build concrete skills (e.g., literature review, experimental design planning, documentation,
-                scientific communication) and support teams through cycles of revision and improvement.
+                designed to build concrete skills (e.g., literature review, research design planning, documentation,
+                scientific writing, and communication) and support teams through cycles of revision and improvement.
               </p>
 
               <div style="margin-top: 28px">
@@ -1267,7 +1262,7 @@
         </div>
       </section>
 
-      <!-- COMPETITION TRACKS -->
+      <!-- COMPETITION TRACK -->
       <section class="section-frame" id="competition-tracks">
         <div
           class="bg-layer"
@@ -1286,11 +1281,11 @@
 
         <div class="content section-pad">
           <div class="headline-band">
-            <h2 class="h2">COMPETITION TRACKS</h2>
+            <h2 class="h2">COMPETITION TRACK</h2>
           </div>
 
           <div class="tracks-grid">
-            <article class="track-card" id="innovation">
+            <article class="track-card">
               <div class="badge-num">1</div>
               <div class="track-title">RESEARCH</div>
               <div class="track-body">
@@ -1301,30 +1296,6 @@
                 support reproducibility.
               </div>
               <a class="btn track-btn" href="#timeline">Details</a>
-            </article>
-
-            <article class="track-card">
-              <div class="badge-num">2</div>
-              <div class="track-title">INNOVATION</div>
-              <div class="track-body">
-                Participants will engineer a functional prototype of their solution. Deliverables include the working
-                prototype, comprehensive documentation detailing design decisions and development processes, and a short
-                video showcasing functionality and intended impact. Teams will be guided through feasibility planning,
-                materials sourcing, and documentation standards during the programme.
-              </div>
-              <a class="btn track-btn" href="#criteria">Details</a>
-            </article>
-
-            <article class="track-card" id="conceptual">
-              <div class="badge-num">3</div>
-              <div class="track-title">CONCEPTUAL<br />DESIGN</div>
-              <div class="track-body">
-                Participants will submit a proof-of-concept solution in any format of their choosing (e.g., model,
-                framework, simulation, design, or other rigorous representation). This track prioritises scientific
-                rigour, originality, and clarity of vision, with a strong emphasis on research-backed validation and a
-                clear execution plan tailored to the chosen format.
-              </div>
-              <a class="btn track-btn" href="#resources">Details</a>
             </article>
           </div>
         </div>
@@ -1368,7 +1339,7 @@
                     <div class="tdot">2</div>
                     <div>
                       <div class="tlabel">Preliminary Stage</div>
-                      <div class="tdate">Due: 31 January • Team formation, track selection, initial idea (1–2 paragraph concept)</div>
+                      <div class="tdate">Due: 31 January • Team formation, initial research idea (1–2 paragraph concept)</div>
                     </div>
                   </div>
 
@@ -1376,7 +1347,7 @@
                     <div class="tdot">3</div>
                     <div>
                       <div class="tlabel">8-Week Programme</div>
-                      <div class="tdate">Weeks 1–8 • Friday lunch sessions + deliverables by track (foundation → execution initiation)</div>
+                      <div class="tdate">Weeks 1–8 • Friday lunch sessions + staged deliverables (foundation → execution initiation)</div>
                     </div>
                   </div>
 
@@ -1427,8 +1398,8 @@
             <p class="p" style="margin-top: 0">
               Research submissions are evaluated using a structured rubric (Total: 90 points), organised into five sections
               (18 points each). Judges use level descriptors to assess clarity, rigour, evidence quality, originality, and
-              academic execution. Academic integrity applies across all tracks: all work must be original, all sources must
-              be cited, and any use of generative AI must be disclosed.
+              academic execution. Academic integrity applies: all work must be original, all sources must be cited, and any
+              use of generative AI must be disclosed.
             </p>
 
             <div class="criteria-grid">
@@ -1656,7 +1627,7 @@
               <p class="p" style="margin-top: 0">
                 Guest speakers are allocated a 40-minute session that can be in-person, online, or pre-recorded. Sessions
                 may be centered on industry insights, topic-specific lectures (e.g., their own research and its
-                implications), or practical workshops (e.g., research paper writing, scientific communication, prototype
+                implications), or practical workshops (e.g., research paper writing, scientific communication, research
                 documentation, validation, and execution planning).
               </p>
 
@@ -1664,7 +1635,7 @@
               <ul class="bullets">
                 <li>Weekly Friday lunch sessions build specific skills and expose participants to a wide range of scientific fields.</li>
                 <li>Check-in &amp; feedback sessions (with mentors) help teams revise plans and prepare for execution.</li>
-                <li>Milestone announcements keep teams aligned on deliverables and deadlines across all tracks.</li>
+                <li>Milestone announcements keep teams aligned on deliverables and deadlines.</li>
               </ul>
             </div>
           </div>
@@ -1681,8 +1652,7 @@
           <p class="p" style="margin-top: 0; max-width: 840px; margin-left: auto; margin-right: auto">
             Guest speakers bring industry expertise, real-world experience, and inspiration to the competition. Sessions
             can be delivered in-person, online, or pre-recorded, and may include industry insights, topic lectures on
-            speakers’ research and professional work, or practical workshops to strengthen student deliverables across
-            all tracks.
+            speakers’ research and professional work, or practical workshops to strengthen student research deliverables.
           </p>
         </div>
       </section>
@@ -1704,14 +1674,14 @@
 
             <div class="underline" style="margin-top: 26px">TYPES OF PARTNERS</div>
             <ul class="bullets">
-              <li>Educational, industry, and nonprofit institutions for problem statements, domain expertise, internships, and sponsorship of innovation challenges.</li>
+              <li>Educational, industry, and nonprofit institutions for problem statements, domain expertise, internships, and sponsorship of research challenges.</li>
             </ul>
 
             <div class="underline" style="margin-top: 26px">POSSIBLE PARTNERSHIP ACTIVITIES</div>
             <ul class="bullets">
               <li>Co-designed project briefs or challenge statements that reflect real organisational needs or community issues.</li>
-              <li>Guest talks, mentorship clinics, and site visits that expose students to different professions and innovation processes.</li>
-              <li>Joint showcases, hackathons, or demo days where partners give feedback, judge prototypes, and identify promising ideas or talent.</li>
+              <li>Guest talks, mentorship clinics, and site visits that expose students to different professions and research pathways.</li>
+              <li>Joint showcases or conference-style sessions where partners give feedback, review papers, and identify promising work or talent.</li>
             </ul>
           </div>
         </div>
